@@ -16,7 +16,7 @@
 
 ## 什么不写
 
-- 不写分步实现指导，不教 worker 具体怎么写代码。
+- 不写分步实现指导，不教执行方具体怎么写代码。
 - 不写"先打开 X 文件然后…"这类操作手册式内容。
 - 保持 WHAT（做什么）和 DONE（什么算做完）清楚，把 HOW（怎么做）留给执行方。
 
@@ -31,12 +31,6 @@
 - 用中文写，五个部分依次为背景、任务、范围、验收标准、约束。
 - 验收标准尽量可执行，优先写命令和预期输出，而不是形容词。
 
-## Available connectors
-
-- Use `muse.connector_search` to find other connectors and `muse.skill_search` to find related skills.
-
-- If nothing here fits, look on the web for a maintained API or MCP server and set it up with [Custom Connectors and MCPs](/opt/muse/skills/custom-connector-setup/SKILL.md), or build a custom connector.
-
-## Alternatives for better results
+## 备选做法
 
 - 当任务只是随手一提、不值得正式立项时，用两行压缩版（任务加验收标准）代替完整五段式。
