@@ -1,0 +1,42 @@
+# 写任务 Brief
+
+## 什么时候用
+
+- 当用户明确说"写 brief""写个任务简报"或类似的话时，直接启用本 skill。
+- 当用户在写方案或计划，且内容里出现了可交付的任务项（比如"让 agent 做""需要实现""分给…"）时，主动问一句要不要按 brief 格式整理，得到肯定答复后再启用。
+- 当用户只是在讨论想法、问问题或闲聊时，不要启用，也不要提起本 skill。
+
+## Brief 的五段式
+
+- 先写背景，用一句话说清为什么要做这件事。
+- 再写任务，具体说做什么，不用"优化一下""处理一下"这类模糊词。
+- 接着写范围，列出涉及的文件或模块，并明确写出不碰哪些。
+- 然后写验收标准，给出可执行的检查方式，比如跑什么命令、看到什么输出算通过。
+- 最后写约束，比如别改接口签名、保持现有输出格式、性能要求。
+
+## 什么不写
+
+- 不写分步实现指导，不教 worker 具体怎么写代码。
+- 不写"先打开 X 文件然后…"这类操作手册式内容。
+- 保持 WHAT（做什么）和 DONE（什么算做完）清楚，把 HOW（怎么做）留给执行方。
+
+## 质量检查
+
+- 写完后自问：如果把这份 brief 给一个完全不了解项目的人，他能一次做对吗。
+- 如果他需要回来追问，追问的那个点就是 brief 缺的部分，补上。
+- 任务很小（一句话能说清）时不要硬套五段式，用"任务加验收标准"两行即可。
+
+## 输出格式
+
+- 用中文写，五个部分依次为背景、任务、范围、验收标准、约束。
+- 验收标准尽量可执行，优先写命令和预期输出，而不是形容词。
+
+## Available connectors
+
+- Use `muse.connector_search` to find other connectors and `muse.skill_search` to find related skills.
+
+- If nothing here fits, look on the web for a maintained API or MCP server and set it up with [Custom Connectors and MCPs](/opt/muse/skills/custom-connector-setup/SKILL.md), or build a custom connector.
+
+## Alternatives for better results
+
+- 当任务只是随手一提、不值得正式立项时，用两行压缩版（任务加验收标准）代替完整五段式。
