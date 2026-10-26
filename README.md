@@ -43,3 +43,4 @@ Windows 下用 `py install.py`。会安装到 `~/.agents/skills`（优先软链�
 | Skill | 说明 |
 |---|---|
 | `brief-write` | 把想法或任务写成背景/任务/范围/验收标准/约束五段式简报，用于 agent 交接或写方案计划时明确可交付事项。 |
+| `agent-kit-builder` | 把已达成一致的实施方案做成可交接的 Agent 项目套件：AGENTS.md、子任务 brief 与 start_prompt，让主 Agent 能协调、子 Agent 能独立执行与验收。 |
