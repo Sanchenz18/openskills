@@ -44,3 +44,4 @@ Windows 下用 `py install.py`。会安装到 `~/.agents/skills`（优先软链�
 |---|---|
 | `brief-write` | 把想法或任务写成背景/任务/范围/验收标准/约束五段式简报，用于 agent 交接或写方案计划时明确可交付事项。 |
 | `agent-kit-builder` | 把已达成一致的实施方案做成可交接的 Agent 项目套件：AGENTS.md、子任务 brief 与 start_prompt，让主 Agent 能协调、子 Agent 能独立执行与验收。 |
+| `wavedrom-draw` | 为数字硬件文档绘制、修订和校验 WaveDrom 时序图（WaveJSON 到 SVG/PNG）：图上只留短标签、长说明移图下编号注释，渲染后过源文件 lint 与 SVG 几何检查，防止标签遮挡与溢出。 |
